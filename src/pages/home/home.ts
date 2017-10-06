@@ -10,5 +10,9 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
-
+  customData: string = "My Current Data";
+  
+      changeData(data) {
+          this.customData = data;
+      }
 }
