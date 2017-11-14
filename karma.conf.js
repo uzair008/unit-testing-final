@@ -28,6 +28,8 @@ module.exports = function (config) {
       config: './angular-cli.json',
       environment: 'dev'
     },
+    reporters: ['dots', 'junit'],
+    junitReporter: {outputDir: 'TEST_RESULTS'},
     reporters: config.angularCli && config.angularCli.codeCoverage
       ? ['mocha', 'karma-remap-istanbul']
       : ['mocha'],
